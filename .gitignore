@@ -1,0 +1,8 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/obj/Debug
+/obj
+/MauiTestApp.csproj.user
+/.vs/MauiTestApp/FileContentIndex/5e68cdaf-2f2b-4a08-94fd-d22c78210b48.vsidx
