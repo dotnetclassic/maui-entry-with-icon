@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiTestApp.MVVM.Views.FormView"
+             Title="MVVM Form View"
+            xmlns:local="clr-namespace:MauiTestApp.Controls">
+    
+
+    <VerticalStackLayout Padding="10">
+        <local:MyCustomEntry Placeholder="Border Less Entry" ImageSource="custom"></local:MyCustomEntry>
+        
+        
+        <Entry x:Name="entName"  Placeholder="Name" Text="{Binding model.Name}"></Entry>
+        <Label x:Name="lblName" TextColor="Red" Text="{Binding model.NameError}"></Label>
+        <Entry x:Name="entEmail" Placeholder="Email" Text="{Binding model.Email}"></Entry>
+        <Label x:Name="lblEmail" TextColor="Red" Text="{Binding model.EmailError}"></Label>
+        <Entry x:Name="entPhone" Placeholder="Phone" Text="{Binding model.Phone}"></Entry>
+        <Label x:Name="lblPhone" TextColor="Red" Text="{Binding model.PhoneError}"></Label>
+        <Editor x:Name="entComments" Placeholder="Comments" HeightRequest="200" Text="{Binding model.Comments}"></Editor>
+            
+
+        <Button Text="Submit" BorderWidth="0" Command="{Binding SubmitCommand}"></Button>
+    </VerticalStackLayout>
+</ContentPage>
